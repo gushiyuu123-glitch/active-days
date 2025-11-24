@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ====== グローバル初期化 ====== */
+html, body {
+ 
+  overflow-x: hidden;
+ 
+}
+
+/* body カスタムは apply を使わずに書く */
+body {
+  background: #ffffff;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ====== アニメーション共通 ====== */
+.show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.9s cubic-bezier(.18,.55,.25,1),
+    transform 0.9s cubic-bezier(.18,.55,.25,1);
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* global.css */
+.nav-item {
+  position: relative;
+  padding-bottom: 4px;
+  color: #555;
+  transition: color 0.25s ease;
+}
+
+.nav-item:hover {
+  color: #000;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: #000;
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
