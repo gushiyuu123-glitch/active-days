@@ -135,7 +135,7 @@ export default function Price() {
         <p className="text-gray-600 text-[0.95rem] leading-[1.9]">
           入会金：<span className="font-medium text-gray-900">¥5,000</span><br />
           ※ パーソナルプラン入会で <span className="text-black font-medium">入会金無料</span>
-    w    </p>
+       </p>
       </div>
     </section>
   );
