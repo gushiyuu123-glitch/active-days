@@ -1,17 +1,70 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
-  <meta name="google" content="notranslate" />
 
+    <!-- Google翻訳を完全無効化 -->
+    <meta name="google" content="notranslate" />
+
+    <!-- モバイル最適化 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gym-site</title>
+
+    <!-- ======================================
+         Title & Description
+    ======================================= -->
+    <title>ACTIVE DAYS | 24時間ジム・パーソナルトレーニング</title>
+    <meta
+      name="description"
+      content="ACTIVE DAYS は“無理なく続けられる”ちょうど良いフィットネス。24時間営業、初心者も安心の明るい空間、最新マシン、専門トレーナーがサポート。"
+    />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://active-days.vercel.app/" />
+
+    <!-- ======================================
+         Open Graph（SNSカード）
+    ======================================= -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ACTIVE DAYS | Fitness" />
+    <meta property="og:title" content="ACTIVE DAYS | 24時間ジム・パーソナル" />
+    <meta
+      property="og:description"
+      content="明るく清潔、続けやすい24時間フィットネスジム。最新設備×安全性×専門トレーナーであなたの毎日をアップデート。"
+    />
+    <meta
+      property="og:image"
+      content="https://active-days.vercel.app/ogp.png"
+    />
+    <meta property="og:url" content="https://active-days.vercel.app/" />
+
+    <!-- Twitterカード -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- ======================================
+         Favicon（favicon.png を /public に置く）
+    ======================================= -->
+    <link rel="icon" href="/favicon.png" />
+
+    <!-- ======================================
+         Fonts（NOTE: これで安定）
+    ======================================= -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Preload（高速表示） -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&display=swap"
+      as="style"
+    />
+
+    <!-- Vite Root -->
+    <script type="module" src="/src/main.jsx"></script>
   </head>
+
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

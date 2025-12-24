@@ -55,12 +55,35 @@ export default function Footer() {
         </div>
 
         {/* ===== 1px 下ライン ===== */}
-        <div className="w-full h-[1px] bg-white/10 mt-16 mb-8"></div>
+        <div className="w-full h-[1px] bg-white/10 mt-16 mb-10"></div>
 
-        {/* COPYRIGHT */}
-        <p className="text-center text-white/35 text-[0.8rem] tracking-wide">
-          © {new Date().getFullYear()} ACTIVE DAYS — All Rights Reserved.
-        </p>
+        {/* COPYRIGHT & DESIGN LINK */}
+        <div className="text-center space-y-3">
+
+          {/* コピーライト */}
+          <p className="text-white/35 text-[0.8rem] tracking-wide">
+            © {new Date().getFullYear()} ACTIVE DAYS — All Rights Reserved.
+          </p>
+
+          {/* ▼ GUSHIKEN DESIGN link  */}
+          <a
+            href="https://gushikendesign.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              block
+              text-[0.75rem]
+              tracking-[0.25em]
+              text-white/30
+              hover:text-white/70
+              transition-all
+              duration-300
+              select-none
+            "
+          >
+            Designed by GUSHIKEN DESIGN
+          </a>
+        </div>
       </div>
     </footer>
   );
